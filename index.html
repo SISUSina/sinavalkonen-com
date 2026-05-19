@@ -443,6 +443,26 @@ img { max-width: 100%; display: block; }
 }
 
 /* =========================================================
+   SECTION II.5 — WIE ICH ARBEITE
+   ========================================================= */
+.approach-section {
+  background: var(--bg-main);
+  padding: 7rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.approach-section .container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.5fr;
+  gap: 5rem;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .approach-section .container { grid-template-columns: 1fr; gap: 2rem; }
+  .approach-section { padding: 4rem 0; }
+}
+
+/* =========================================================
    SECTION III — ZERTIFIKATE
    ========================================================= */
 .certs {
@@ -945,6 +965,30 @@ img { max-width: 100%; display: block; }
       <div class="chip">Frauengesundheit</div>
       <div class="chip">Menopause</div>
       <div class="chip">Mental Health</div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION II.5 — WIE ICH ARBEITE
+     ========================================================= -->
+<section class="approach-section" id="ansatz">
+  <div class="container">
+    <div class="section-meta">
+      <div class="roman">II.5</div>
+      <div class="label">Mein Ansatz</div>
+      <h2>Wie<br><em>ich arbeite</em></h2>
+    </div>
+    <div class="story-text">
+      <p class="lead"><em>Mental Load, Kinderwunsch, Menopause</em> — auf den ersten Blick drei verschiedene Themen. In der Praxis: dasselbe Muster.</p>
+
+      <p>Eine Frau, die zu viel trägt. Eine, die nicht mehr weiß, wo sie anfängt und wo das Außen aufhört.</p>
+
+      <p>Im Coaching schauen wir hin — auf das, was offensichtlich ist (die Müdigkeit, der Druck, die Sorge), und auf das, was darunter liegt (alte Muster, körperliche Signale, ungelöste Themen).</p>
+
+      <p>Ich arbeite <strong>systemisch und wissenschaftlich fundiert</strong>, ohne Eso-Pathos. Wir reden Klartext, wo Klartext hilft. Wir finden Worte für das, was lange unsichtbar war.</p>
+
+      <p>Meine Aufgabe ist nicht, dir zu sagen, was du tun sollst — sondern gemeinsam mit dir herauszufinden, was dir guttut. Ich unterstütze dich beim Hinsehen, damit du deine eigene Lösung findest.</p>
     </div>
   </div>
 </section>
