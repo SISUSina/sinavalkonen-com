@@ -33,7 +33,7 @@
 
 <!-- Schriften via Bunny Fonts (DSGVO-konform, EU-gehostet, Google Fonts API kompatibel) -->
 <link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=bodoni-moda:ital,wght@0,400;0,500;1,400;1,500|inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.bunny.net/css?family=bodoni-moda:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500|inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 /* =========================================================
@@ -215,17 +215,17 @@ img { max-width: 100%; display: block; }
 
 .hero-name {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 300;
   font-size: clamp(3rem, 8vw, 6.5rem);
   line-height: 0.95;
   letter-spacing: -0.02em;
   margin-bottom: 0;
 }
-.hero-name .first { display: block; font-weight: 400; font-style: normal; }
+.hero-name .first { display: block; font-weight: 300; font-style: normal; }
 .hero-name .last {
   display: block;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   margin-left: 0.6em;
 }
 
@@ -964,14 +964,16 @@ img { max-width: 100%; display: block; }
   <div class="container">
     <div class="hero-image" aria-label="Portrait Sina Valkonen"></div>
     <div class="hero-text">
-      <h1 class="hero-h1-sr-only">Sina Valkonen — Coaching</h1>
-      <svg class="hero-logo-svg" viewBox="280 340 860 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hero-logo-title">
-        <title id="hero-logo-title">Sina Valkonen Coaching</title>
-        <text style="font-family:'Bodoni Moda',serif;font-size:176px;font-weight:400;font-style:normal;fill:#232323" x="320" y="500">Sina</text>
-        <text style="font-family:'Bodoni Moda',serif;font-size:176px;font-weight:400;font-style:italic;fill:#232323" x="408" y="690">Valkonen</text>
-        <text style="font-family:'Inter',sans-serif;font-size:21px;font-weight:500;letter-spacing:8.4px;fill:#6a6660" x="320" y="780">COACHING</text>
-        <line x1="525" y1="773" x2="1098" y2="773" stroke="#9d8f7f" stroke-width="2"/>
-      </svg>
+      <div class="hero-wordmark">
+        <h1 class="hero-name">
+          <span class="first">Sina</span>
+          <span class="last">Valkonen</span>
+        </h1>
+        <div class="hero-sublabel">
+          <span class="label">Coaching</span>
+          <span class="rule"></span>
+        </div>
+      </div>
       <p class="hero-tagline">Schön, dass du hier bist. Ich bin Coach für Frauen — für die Phasen, in denen Kinderwunsch, Hormone oder mentale Last das ganze Leben einnehmen.</p>
       <div class="btn-row">
         <a href="mailto:mail@sinavalkonen.com" class="btn">Schreib mir</a>
