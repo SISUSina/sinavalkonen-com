@@ -33,7 +33,7 @@
 
 <!-- Schriften via Bunny Fonts (DSGVO-konform, EU-gehostet, Google Fonts API kompatibel) -->
 <link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=bodoni-moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900|inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.bunny.net/css?family=bodoni-moda:ital,wght@0,400;0,500;1,400;1,500|inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 /* =========================================================
@@ -80,6 +80,7 @@ body {
   color: var(--text);
   line-height: 1.55;
   font-weight: 300;
+  font-synthesis: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -316,6 +317,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 900px) {
   .portrait-section .container { grid-template-columns: 1fr; gap: 2rem; }
   .portrait-section { padding: 4rem 0; }
+  .section-meta { position: static; top: auto; }
 }
 
 .section-meta {
